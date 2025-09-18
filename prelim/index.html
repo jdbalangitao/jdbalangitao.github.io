@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=flight" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span class="material-symbols-outlined" style="vertical-align: middle; font-size: 1.3em; margin-right: 6px;">flight</span>
+            Arat na Travel
+        </div>
+        <div class="nav-links">
+            <a span="#" class="home-link">Home</a>
+            <a span="#">Features</a>
+            <a span="#">Pricing</a>
+            <a span="#">FAQs</a>
+            <a span="#">About</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="slider-container">
+            <button class="slider-btn left" onclick="plusSlides(-1)">&#10094;</button>
+            <div class="slider">
+                <img src="images/image1.jpg" class="slide active" alt="Slide 1">
+                <img src="images/image1.1.jpg" class="slide" alt="Slide 2">
+                <img src="images/image1.2.jpg" class="slide" alt="Slide 3">
+            </div>
+            <button class="slider-btn right" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <div class="account-form-container">
+            <h2>Create an Account</h2>
+            <form class="account-form">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <label for="username">Username</label>
+                <div style="display: flex; align-items: stretch; margin-bottom: 14px;">
+                    <span style="background: #eee; border: 1px solid #ccc; border-radius: 5px 0 0 5px; padding: 0 10px; color: #888; border-right: none; display: flex; align-items: center; height: 38px;">
+                        @
+                    </span>
+                    <input type="text" id="username" name="username" required style="border-radius: 0 5px 5px 0; border-left: none; margin-bottom: 0; flex: 1; height: 38px;">
+                </div>
+                <div class="account-form-row">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <select id="state" name="state" required style="width: 100%; margin-bottom: 14px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; height: 38px;">
+                            <option value=""></option>
+                            <option>(NCR)</option>
+                            <option>(CAR)</option>
+                            <option>(Region I)</option>
+                            <option>(Region II)</option>
+                            <option>(Region III)</option>
+                            <option>(Region IV-A)</option>
+                            <option>(Region IV-B)</option>
+                            <option>(Region V)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip">
+                    </div>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree" style="margin-bottom:0;">I agree to terms and conditions</label>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="why-choose-us-section">
+        <h2>Why Choose Us</h2>
+        <div class="why-card-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec odio. quisque volupat mattis eros.nulll malesuada
+                    </div>
+        <div class="why-choose-us-cards">
+            <div class="why-card">
+                <img src="images/image2.jpg" alt="Why Choose Us 1">
+                <div class="why-card-body">
+                    <div class="why-card-title">Card title</div>
+                    <div class="why-card-desc">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="images/image3.jpg" alt="Why Choose Us 2">
+                <div class="why-card-body">
+                    <div class="why-card-title">Card title</div>
+                    <div class="why-card-desc">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="images/image4.jpg" alt="Why Choose Us 3">
+                <div class="why-card-body">
+                    <div class="why-card-title">Card title</div>
+                    <div class="why-card-desc">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-page-section">
+        <div class="third-page-image-container">
+            <img src="images/image5.jpg" alt="Gallery Image" class="third-page-image">
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        const slides = document.querySelectorAll('.slide');
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            if (n >= slides.length) {slideIndex = 0}
+            if (n < 0) {slideIndex = slides.length-1}
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndex) ? 'block' : 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
