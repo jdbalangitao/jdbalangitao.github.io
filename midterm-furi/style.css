@@ -1,0 +1,141 @@
+/* General Reset & Font */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #3b5d50;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Product Section */
+.products-section img {
+  transition: transform 0.3s ease;
+}
+
+.products-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Why Choose Us */
+.why-choose-us h2 {
+  color: #222;
+}
+
+.why-choose-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.why-choose-us .row {
+  display: flex;
+  align-items: center; /* Keeps text and image level */
+}
+
+.why-choose-us .col-lg-6 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional spacing refinement */
+.why-choose-us h2 {
+  margin-bottom: 1rem;
+}
+
+.why-choose-us p {
+  margin-bottom: 2rem;
+}
+
+/* Interior Section (Modern Design) */
+.interior-section {
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+.collage-images {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.collage-images img {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.collage-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Layout for collage images */
+.collage-images .img1 {
+  width: 230px;
+  height: auto;
+  z-index: 3;
+}
+
+.collage-images .img2 {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 160px;
+  z-index: 2;
+}
+
+.collage-images .img3 {
+  position: absolute;
+  bottom: -80px;
+  right: -10px;
+  width: 200px;
+  z-index: 1;
+}
+
+
+/* Featured Chairs */
+.featured-chairs .chair-img img {
+  transition: transform 0.3s ease;
+}
+
+.featured-chairs .chair-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+}
+
+.footer a {
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #3b5d50;
+}
